@@ -11,6 +11,12 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
+                <style>
+                    .photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0}
+                    .photo-grid img{width:100%;height:auto;border-radius:8px;box-shadow:0 8px 20px rgba(0,0,0,0.12);display:block}
+                    .photo-grid figure{margin:0}
+                    .photo-caption{font-size:0.9rem;color:#444;margin-top:8px;text-align:center}
+                </style>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -25,8 +31,27 @@
 </section>
 <div class="announcements"><h2> Heading Four </h2></div>
 
+                <section aria-label="Photo gallery">
+                    <div class="photo-grid">
+                        <figure>
+                            <img src="images/Cute Puppy.jpg" alt="Cute Puppy" />
+                            
+                        </figure>
+                        <figure>
+                            <img src="images/Train.jpg" alt="Train" />
+                           
+                        </figure>
+                        <figure>
+                            <img src="images/Hello-World.png" alt="Hello-World" />
+                            
+                        </figure>
+                    </div>
+                </section>
+
+
 
         </div>
         <script src="" async defer></script>
     </body>
 </html>
+
